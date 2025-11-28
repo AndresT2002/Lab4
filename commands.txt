@@ -1,0 +1,28 @@
+1. Buildeo
+docker build -t miapp-docker:v1 .
+
+2. Ejecución
+docker run -d -p 4000:4000 --name mi-contenedor miapp-docker:v1
+
+
+3. Probar alguna url
+http://localhost:4000/ → Bienvenida
+http://localhost:4000/saludo/TuNombre → Saludo personalizado
+http://localhost:4000/suma/10/5 → Suma (resultado: 15)
+http://localhost:4000/multiplicacion/7/6 → Multiplicación
+http://localhost:4000/info → Info del servidor
+
+
+
+4. Eliminar contenedor
+docker rm -f mi-contenedor
+docker rm -f mi-contenedor-remoto
+
+5. Publicar en Docker Hub
+docker tag miapp-docker:v1 andrest2002/miapp-docker:v1
+docker login
+docker push andrest2002/miapp-docker:v1
+
+6. Probar en otro entorno (desde otro equipo o entorno limpio)
+docker pull andrest2002/miapp-docker:v1
+docker run -d -p 4000:4000 --name mi-contenedor-remoto andrest2002/miapp-docker:v1

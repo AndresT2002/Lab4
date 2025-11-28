@@ -1,0 +1,23 @@
+{
+  "name": "lab4-docker-udea",
+  "version": "1.0.0",
+  "description": "Laboratorio 4 - Contenedores y Despliegue con Docker - UdeA 2025",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": [
+    "docker",
+    "nodejs",
+    "express",
+    "udea",
+    "cloud"
+  ],
+  "author": "Estudiante UdeA",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+

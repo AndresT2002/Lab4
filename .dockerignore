@@ -1,0 +1,43 @@
+# Dependencias
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Archivos de desarrollo
+.env
+.env.local
+.env.*.local
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Documentación
+*.md
+docs/
+
+# Tests
+test/
+tests/
+coverage/
+.nyc_output
+
+# Archivos temporales
+tmp/
+temp/
+
